@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { errorRoute, navbarRoute } from './layouts';
 import { DEBUG_INFO_ENABLED } from 'app/app.constants';
-import {ContactComponent} from './contact/contact.component';
+import { ContactComponent } from './contact/contact.component';
 
-const LAYOUT_ROUTES = [{path: 'contact', component: ContactComponent}, navbarRoute, ...errorRoute];
+const LAYOUT_ROUTES = [{ path: 'contact', component: ContactComponent }, navbarRoute, ...errorRoute];
 
 @NgModule({
     imports: [
