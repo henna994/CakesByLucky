@@ -1,7 +1,7 @@
 <div>
     <h2 id="page-heading">
         <span jhiTranslate="robcoApp.devices.home.title">Devices</span>
-        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-devices" [routerLink]="['/devices/new']">
+        <button *jhiHasAnyAuthority="'ROLE_ADMIN'" id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-devices" [routerLink]="['/devices/new']">
             <fa-icon [icon]="'plus'"></fa-icon>
             <span class="hidden-sm-down"  jhiTranslate="robcoApp.devices.home.createLabel">
             Create new Devices

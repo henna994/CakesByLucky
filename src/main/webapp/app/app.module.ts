@@ -18,6 +18,7 @@ import { RobcoHomeModule } from './home/home.module';
 import { RobcoAccountModule } from './account/account.module';
 import { RobcoEntityModule } from './entities/entity.module';
 import * as moment from 'moment';
+import { RobcoAppContactModule } from './contact/contact.module';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ActiveMenuDirective, ErrorComponent } from './layouts';
 import { ContactComponent } from './contact/contact.component';
@@ -37,6 +38,7 @@ import { ContactComponent } from './contact/contact.component';
         RobcoCoreModule,
         RobcoHomeModule,
         RobcoAccountModule,
+        RobcoAppContactModule,
         // jhipster-needle-angular-add-module JHipster will add new module here
         RobcoEntityModule,
         RobcoAppRoutingModule

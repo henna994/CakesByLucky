@@ -1,13 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'jhi-contact',
   templateUrl: './contact.component.html',
-  styles: []
+  styleUrls: [
+    'contact.component.scss'
+  ]
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  message: string;
+
+  constructor() {
+    this.message = 'ContactComponent message';
+  }
 
   ngOnInit() {
   }
