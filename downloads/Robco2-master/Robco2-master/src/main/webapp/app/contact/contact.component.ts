@@ -17,10 +17,9 @@ export class ContactComponent implements OnInit {
     ngOnInit() {}
     sendNotification(): void {
         const url = 'http://localhost:8080/api/contact';
-        this.http.post(url, this.model).subscribe(
-            res => {
-                location.reload(); }
-    );
+        this.http.post(url, this.model).subscribe(res => {
+            location.reload();
+        });
     }
 }
 export interface UserModel {
